@@ -1,0 +1,9 @@
+#!name = DNSPod-DoH
+#!desc = 使用腾讯DNS-over-HTTPS (DoH)专业版（个人使用）
+
+[General]
+dns-server = 121.4.4.21, 121.4.4.143
+encrypted-dns-server = https://doh-c687153a-myiphone13.doh.pub/dns-query
+
+[Host]
+miwifi.com = 192.168.50.242
