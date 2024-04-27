@@ -1,0 +1,21 @@
+#!name=javDByjou vip
+
+#!desc=JAV永久VIP
+
+#!homepage=jav.app
+
+#!author=ddgksf2013
+
+[Script]
+# > JavDB_会员信息@感谢【吹笛的风】友情赞助终身会员账号
+javdb.vip = type=http-request, pattern="^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/movies\/\w+\/play", script-path=https://gist.githubusercontent.com/ddgksf2013/df6535ef52a26b77609a6616dbf4780a/raw/javdb.vip.js, timeout=60
+# > JavDB_开屏广告@ddgksf2013
+javdb.vip = type=http-response, pattern="^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/startup", script-path=https://gist.githubusercontent.com/ddgksf2013/df6535ef52a26b77609a6616dbf4780a/raw/javdb.vip.js, requires-body=true, max-size=-1, timeout=60
+# > JavDB_Tab广告@ddgksf2013
+javdb.vip = type=http-response, pattern="^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/ads", script-path=https://gist.githubusercontent.com/ddgksf2013/df6535ef52a26b77609a6616dbf4780a/raw/javdb.vip.js, requires-body=true, max-size=-1, timeout=60
+# > JavDB_播放页@ddgksf2013
+javdb.vip = type=http-response, pattern="^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v4\/movies", script-path=https://gist.githubusercontent.com/ddgksf2013/df6535ef52a26b77609a6616dbf4780a/raw/javdb.vip.js, requires-body=true, max-size=-1, timeout=60
+# > JavDB_用户页@ddgksf2013
+javdb.vip = type=http-response, pattern="^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/users\?", script-path=https://gist.githubusercontent.com/ddgksf2013/df6535ef52a26b77609a6616dbf4780a/raw/javdb.vip.js, requires-body=true, max-size=-1, timeout=60
+[Mitm]
+hostname = %APPEND% api.hechuangxinxi.xyz, api.pxxgg.xyz, api.wwwuh5.cn, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz
