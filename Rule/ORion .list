@@ -1,0 +1,25 @@
+# Orion 浏览器 + Kagi 搜索 专属分流规则（仅走代理，其余直连） 
+
+## 核心服务域名 
+
+DOMAIN-SUFFIX,orionbrowser.com 
+
+DOMAIN-SUFFIX,kagi.com 
+
+DOMAIN-SUFFIX,kagisearch.com 
+
+DOMAIN-SUFFIX,kagi-static.com 
+
+DOMAIN-SUFFIX,kagi-cdn.com 
+
+## Orion 扩展/同步/更新相关域名 
+
+DOMAIN-SUFFIX,korion.dev 
+
+DOMAIN-SUFFIX,orion-api.com 
+
+## Kagi AI/工具相关域名 
+
+DOMAIN-SUFFIX,kagi-ai.com 
+
+DOMAIN-SUFFIX,kagi-tools.com
